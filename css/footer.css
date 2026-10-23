@@ -1,0 +1,133 @@
+@charset "UTF-8";
+
+footer{
+    margin-top: 16rem;
+}
+.footer_in{
+    max-width: 144rem;
+    margin: auto;
+    border-top: 2px solid var(--black);
+}
+
+/* footer1 */
+.footer1{
+    padding: 6rem 0;
+    border-bottom: 2px solid #C8C8C8;
+}
+.site_group{
+    display: grid;
+    gap: 3rem;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 1f);
+}
+.site_group li.txt1{
+    font-weight: 600;
+}
+.site_group li a{
+    position: relative;
+    padding-right: 1rem;
+}
+.site_group li a::after{
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    content: "";
+    width: 2.5rem;
+    height: 2.9rem;
+    transform: translateY(-50%);
+    background: url('../img/icon/ico_open_new_window.png') no-repeat center;
+    background-size: 100% 100%;
+}
+/* footer1 - END */
+
+/* footer2 */
+.footer2{
+    display: flex;
+    justify-content: space-between;
+    padding: 6rem 0;
+    gap: 13rem;
+}
+
+.mob_footer1,
+.mob_footer2{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+.mob_footer2{
+    position: relative;
+}
+
+.foot1{}
+.foot2{}
+.family_site{}
+.family_site li{
+    font-size: 1.6rem;
+    padding: 2.2rem 7rem 2.2rem 0;
+    border-bottom: 1px solid var(--black);
+    position: relative;
+}
+.family_site li::after{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    content: "";
+    width: 3rem;
+    height: 3rem;
+    transform: translateY(-50%);
+    background: url('../img/icon/arrow-up.png') no-repeat center;
+    background-size: 100% 100%;
+}
+.family_site li:nth-child(3)::after{
+    transform: translateY(-50%) rotate(90deg);
+}
+
+
+.foot3{}
+.footer_menu{
+    color: #444444;
+    font-size: 1.6rem;
+    line-height: 3rem;
+}
+.footer_menu li:first-child a{
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.foot4{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: end;
+}
+.foot4_txt p{
+    text-align: right;
+    color: #444;
+    line-height: 3rem;
+}
+
+.sns{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.sns li a img{
+    width: 3.3rem;
+    height: 3.3rem;
+}
+
+.footer_logo{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.footer_logo_wrap{
+    margin-top: 1rem;
+    display: flex;
+    gap: 1rem;
+}
+.footer_logo_wrap img{
+    width: auto;
+    height: 5rem;
+}
+/* footer2 - END */
